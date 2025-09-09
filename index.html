@@ -1,49 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hangman Mobile App</title>
+    <title>Hangman - Challenge</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        body { 
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            font-family: sans-serif;
+        }
+
+        .container{
             text-align: center;
-            margin: 40px;
-            background: #f9f9f9;
+            max-width: 600px;
+            width: 90%;
+            padding: 40px 20px; 
+            box-sizing: border-box;
         }
-        .container {
-            max-width: 400px;
-            margin: auto;
-            background: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+        .title{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 48px;
+            font-weight: 100;
+            color: #333333;
+            margin-bottom: 30px;
+            line-height: 55px;
         }
-        h1 {
-            color: #333;
+
+        .description{
+            font-size: 18px;
+            line-height: 28px;
+            color: #666666;
+            margin-bottom: 40px;
+            font-weight: 300;
         }
-        .btn {
+
+        .privacy-btn{
             display: inline-block;
-            margin-top: 20px;
-            padding: 12px 24px;
-            font-size: 16px;
-            background: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
+            padding: 15px 30px;
+            font-size: 18px;
             text-decoration: none;
+            font-weight: 400;
+            color: #ffffff;
+            background-color: #186218;
+            border-radius: 8px;
+            text-align: center;
+            transition: background-color 0.3s ease;
         }
-        .btn:hover {
-            background: #0056b3;
+
+        .privacy-btn:hover{
+            background-color: #2d7f2d;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .title {
+                font-size: 36px;
+                line-height: 42px;
+            }
+            
+            .description {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            
+            .privacy-btn {
+                font-size: 16px;
+                padding: 12px 24px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Hangman Mobile App</h1>
-        <p>Welcome to the Hangman game! Enjoy playing and challenge your friends.</p>
-        <a href="privacy-policy.html" class="btn">Privacy Policy</a>
+        <h1 class="title">Hangman - Challenge</h1>
+        
+        <p class="description">
+            Hangman - Challenge is a simple and entertaining word guessing game designed for users of all ages. Players try to guess words letter by letter while attempting to beat their personal high scores. The game operates entirely offline with local data storage, ensuring a private and secure gaming experience without requiring any personal information or user authentication.
+        </p>
+        
+        <a href="privacy-policy.html" class="privacy-btn">Privacy Policy</a>
     </div>
 </body>
 </html>
